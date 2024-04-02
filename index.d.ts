@@ -1,8 +1,20 @@
-import {FunctionComponent} from 'react';
+import { FunctionComponent } from 'react';
 
 export type EventTypes = 'dateSetAction'|'dismissedAction'|'neutralAction';
 
 export interface MonthPickerProps {
+    /**
+     * Modal visibility
+     */
+    isVisible: boolean;
+    /**
+     * Confirm button text
+     */
+    confirmTextIOS?: string;
+    /**
+     * Cancel button text
+     */
+    cancelTextIOS?: string;
     /**
     * Date change handler.
     * This is called when the user changes the date in the UI. 
